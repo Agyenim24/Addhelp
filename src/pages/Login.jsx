@@ -6,16 +6,18 @@ import LoginImage from "../assets/log.png";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
-  const [email, setEmail] = useState("")
-  
- const [password, setPassword] = useState("")
-  function handleChange(e){
+  const [email, setEmail] = useState("");
+
+  const [password, setPassword] = useState("");
+  function handleChange(e) {
     setEmail(e.target.value);
-    
   }
-  function handleSubmit(e){
-      e.preventDefault();
-      alert(email);
+  function passwordChange(e){
+    setPassword(e.target.value)
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert(email , password);
   }
   return (
     <div className="w-full min-h-screen flex  ">
@@ -56,11 +58,12 @@ function Login() {
           </div>
           <div>
             <form action="" onSubmit={handleSubmit}>
-              <label htmlFor="" className="font-[500] text-sm">
+              <label htmlFor="email" className="font-[500] text-sm">
                 Email Address
               </label>{" "}
               <br />
               <input
+              id="email"
                 onChange={handleChange}
                 value={email}
                 type="email"
@@ -72,7 +75,7 @@ function Login() {
               <br />
               <div className="flex items-center justify-between">
                 <div>
-                  <label htmlFor="" className="font-[500] text-sm">
+                  <label htmlFor="password" className="font-[500] text-sm">
                     Password
                   </label>
                 </div>
@@ -82,7 +85,8 @@ function Login() {
               </div>
               <div className="relative">
                 <input
-                onChange={handleChange}
+                id="password"
+                  onChange={passwordChange}
                   vlaue={password}
                   required
                   type={showPassword ? "text" : "password"}
@@ -108,7 +112,11 @@ function Login() {
                 </p>{" "}
                 <br />
               </div>
-              <input type="submit" value='Sign In' className="w-full cursor-pointer text-sm py-2 rounded-lg bg-[#004AC6] mb-15 text-white hover:bg-blue-500 transition duration-300 ease-in-out"/>
+              <input
+                type="submit"
+                value="Sign In"
+                className="w-full cursor-pointer text-sm py-2 rounded-lg bg-[#004AC6] mb-15 text-white hover:bg-blue-500 transition duration-300 ease-in-out"
+              />
             </form>
             <div className="flex items-center justify-center mb-15 text-sm text-[#434655] gap-2">
               <p>New to AddHelp?</p>
