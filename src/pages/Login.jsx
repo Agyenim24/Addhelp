@@ -1,13 +1,14 @@
-import React, { use, useState } from "react";
+import React, {  useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
 import { SiApple } from "react-icons/si";
 import LoginImage from "../assets/log.png";
+import {Link, Navigate, useNavigate} from "react-router-dom";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
-
+  const navigate = useNavigate();
   const [password, setPassword] = useState("");
   function handleChange(e) {
     setEmail(e.target.value);
@@ -17,12 +18,13 @@ function Login() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    alert(email , password);
+    alert(email)
+    navigate('/LandingPage')
   }
   return (
-    <div className="w-full min-h-screen flex  ">
+    <div className="w-full min-h-screen flex flex-col md:flex-row  ">
       <div className="w-full  ">
-        <img src={LoginImage} alt="login" className="object-cover h-auto" />
+        <img src={LoginImage} alt="login" className="object-cover h-auto w-full h-full" />
       </div>
 
       <div className="w-170  h-screen bg-[#F8F9FF] font-inter px-20 py-22 ">
@@ -69,7 +71,7 @@ function Login() {
                 type="email"
                 required
                 placeholder="name@company.com"
-                className="border text-sm border-[#C3C6D7] w-full px-4 py-2 rounded-lg outline-[#ccc]"
+                className="border text-sm border-[#C3C6D7] w-full px-4 py-2 rounded-lg outline-[#2f4f4f]"
               />{" "}
               <br />
               <br />
@@ -79,18 +81,20 @@ function Login() {
                     Password
                   </label>
                 </div>
-                <button className="text-sm text-[#004AC6] cursor-pointer font-[500] hover:text-blue-500 transition duration-300 ease-in-out ">
-                  Forget Password?
-                </button>
+                <Link to={'/'} className="text-sm text-[#004AC6] cursor-pointer font-[500] hover:text-blue-500 transition duration-300 ease-in-out ">
+                 Forget Password?
+                </Link>
+                 
+                
               </div>
               <div className="relative">
                 <input
                 id="password"
                   onChange={passwordChange}
-                  vlaue={password}
+                  value={password}
                   required
                   type={showPassword ? "text" : "password"}
-                  className="border border-[#C3C6D7] w-full px-4 py-2 rounded-lg text-sm outline-[#ccc] "
+                  className="border border-[#C3C6D7] w-full px-4 py-2 rounded-lg text-sm outline-[#2f4f4f] "
                 />
                 <button
                   className="absolute   right-3 top-1/2 -translate-y-1/2"
@@ -120,16 +124,18 @@ function Login() {
             </form>
             <div className="flex items-center justify-center mb-15 text-sm text-[#434655] gap-2">
               <p>New to AddHelp?</p>
-              <button className="text-md cursor-pointer text-[#004AC6] font-[500] hover:text-blue-500 transition duration-300 ease-in-out">
-                Start your journey
-              </button>
+              <Link to={'/'} className="text-md cursor-pointer text-[#004AC6] font-[500] hover:text-blue-500 transition duration-300 ease-in-out">
+               Start your journey
+              </Link>
+               
+              
             </div>
             <hr className="w-full mb-2 border-[#ccc] " />
             <div>
               <ul className="flex item-center gap-2 text-xs  justify-center">
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-                <li>Help Center</li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Help Center</a></li>
               </ul>
             </div>
           </div>
