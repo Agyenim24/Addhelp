@@ -19,7 +19,7 @@ function Login() {
   function handleSubmit(e) {
     e.preventDefault();
     alert(email)
-    navigate('/LandingPage')
+    navigate('/Sidebar')
   }
   return (
     <div className="w-full min-h-screen flex flex-col md:flex-row  ">
