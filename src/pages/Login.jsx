@@ -18,8 +18,8 @@ function Login() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    alert(email)
-    navigate('/Sidebar')
+    
+    navigate('/Dashboard')
   }
   return (
     <div className="w-full min-h-screen flex flex-col md:flex-row  ">

@@ -16,17 +16,24 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            to="/counselling"
+            to="/dashbaord"
             className="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1"
           >
-            Counselling
+           Dashboard
           </Link>
 
           <Link
-            to="/rehab-centers"
+            to="/counselling"
             className="text-gray-600 hover:text-blue-600 transition-colors"
           >
-            Rehab Centers
+             Counselling
+          </Link>
+
+          <Link
+            to="/faciclities"
+            className="text-gray-600 hover:text-blue-600 transition-colors"
+          >
+            Facilities
           </Link>
 
           <Link
@@ -35,27 +42,20 @@ const Navbar = () => {
           >
             Goals
           </Link>
-
-          <Link
-            to="/reminders"
-            className="text-gray-600 hover:text-blue-600 transition-colors"
-          >
-            Reminders
-          </Link>
         </nav>
 
         {/* Buttons */}
         <div className="flex items-center gap-4">
           <Link
             to="/login"
-            className="hidden md:block text-gray-600 hover:text-blue-600 transition-colors"
+            className="hidden md:block text-gray-600 text-blue-600 transition-colors"
           >
             Login
           </Link>
 
           <Link
-            to="/signup"
-            className="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all active:scale-95"
+            to="/SignUp"
+            className="bg-blue-600 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition-all active:scale-95"
           >
             Get Started
           </Link>
