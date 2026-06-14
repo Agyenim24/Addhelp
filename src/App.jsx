@@ -13,12 +13,12 @@ import Goals from './pages/Goals'
 import Reminders from './pages/Reminders'
 function App() {
   const location = useLocation()
-  const isLoginPage = location.pathname === "/Login"
+  const isLoginPage = location.pathname === "/login"
   return (
     <div>
-      {!isLoginPage && <Navbar/>}
+      {!isLoginPage && <Navbar />}
      <Routes>
-      <Route path='/Login' element={ <Login />}/>
+      <Route path='/login' element={ <Login />}/>
       <Route path='/' element={<LandingPage />}/>
       <Route path='/Dashboard' element={<Dashboard />}/>
       <Route path='/SignUp' element={<SignUp />}/>
