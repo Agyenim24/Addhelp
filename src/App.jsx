@@ -7,18 +7,25 @@ import Sidebar from './components/Sidebar'
 import Footer from './components/Footer'
 import Dashboard from './pages/Dashboard'
 import SignUp from './pages/SignUp'
+import RehabBooking from './pages/RehabBooking'
+import Counselling from './pages/Counselling'
+import Goals from './pages/Goals'
+import Reminders from './pages/Reminders'
 function App() {
   const location = useLocation()
-  const isLoginPage = location.pathname === "/login"
+  const isLoginPage = location.pathname === "/Login"
   return (
     <div>
-      {!isLoginPage && Navbar}
+      {!isLoginPage && <Navbar/>}
      <Routes>
       <Route path='/Login' element={ <Login />}/>
       <Route path='/' element={<LandingPage />}/>
       <Route path='/Dashboard' element={<Dashboard />}/>
       <Route path='/SignUp' element={<SignUp />}/>
-       
+      <Route path='/Counselling' element={<Counselling />}/>
+      <Route path='/RehabBooking' element={<RehabBooking />}/>
+      <Route path='/Goals' element={<Goals />}/>
+      <Route path='/Reminders' element={<Reminders />}/>
      </Routes>
        {!isLoginPage && Footer}
      

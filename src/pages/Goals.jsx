@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Counselling() {
+function Goals() {
   return (
     <div>
-      
+      Goals
     </div>
   )
 }
 
-export default Counselling
+export default Goals
