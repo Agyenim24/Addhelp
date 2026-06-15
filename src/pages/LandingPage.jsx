@@ -5,7 +5,9 @@ function LandingPage() {
     <div>
       <header>
         <Navbar />
+
       </header>
+      
     </div>
   )
 }
