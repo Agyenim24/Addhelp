@@ -1,13 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+
 function LandingPage() {
   return (
-    <div>
-      <header>
-        <Navbar />
-
-      </header>
-      
+    <div className='flex justify-center items-center'>
+      <h1>LandingPage</h1>
     </div>
   )
 }

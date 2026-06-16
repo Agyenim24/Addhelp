@@ -14,9 +14,13 @@ import Reminders from './pages/Reminders'
 function App() {
   const location = useLocation()
   const isLoginPage = location.pathname === "/login"
+  const isDashboard = location.pathname === "/Dashboard"
   return (
     <div>
-      {!isLoginPage && <Navbar />}
+
+      {!isLoginPage && !isDashboard && <Navbar />}
+      
+      
      <Routes>
       <Route path='/login' element={ <Login />}/>
       <Route path='/' element={<LandingPage />}/>

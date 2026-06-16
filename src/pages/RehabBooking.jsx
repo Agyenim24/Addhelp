@@ -2,7 +2,7 @@ import React from 'react'
 
 function RehabBooking() {
   return (
-    <div>
+    <div >
       rehab booking
     </div>
   )
