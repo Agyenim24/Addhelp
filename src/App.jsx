@@ -15,10 +15,11 @@ function App() {
   const location = useLocation()
   const isLoginPage = location.pathname === "/login"
   const isDashboard = location.pathname === "/Dashboard"
+  const isLandingPage = location.pathname === "/"
   return (
     <div>
 
-      {!isLoginPage && !isDashboard && <Navbar />}
+      {!isLoginPage && !isDashboard && !isLandingPage && <Navbar />}
       
       
      <Routes>
