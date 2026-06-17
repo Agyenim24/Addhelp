@@ -107,7 +107,7 @@ const Footer = () => {
               </h5>
 
               <p className="mt-2 text-lg font-medium text-[#B91C1C]">
-                1-800-662-HELP
+                053-118-0263-HELP
               </p>
 
               <p className="text-xs text-[#B91C1C] mt-1">
@@ -115,8 +115,8 @@ const Footer = () => {
               </p>
             </div>
 
-            <p className="text-xs text-gray-600 mt-6">
-              © 2024 Recovery Path. All rights reserved.
+            <p className="text-xs text-gray-600 mt-1">
+              © 2026 Recovery Path. All rights reserved.
             </p>
           </div>
         </div>
