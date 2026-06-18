@@ -4,9 +4,10 @@ import {
   ChevronLeft,
   ChevronRight,
   RefreshCw,
+
 } from "lucide-react";
 import Footer from '../components/Footer';
-
+import Calendar from 'react-calendar';
 function Counselling() {
   const specialists = [
   {
@@ -329,6 +330,7 @@ function Counselling() {
         </div>
       </div>
       <Footer/>
+      
     </div>
   )
 }
