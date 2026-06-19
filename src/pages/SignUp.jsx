@@ -9,7 +9,7 @@ import {
 
 export default function SignUp() {
   return (
-    <div className="min-h-screen bg-[#F5F7FC]">
+    <div className="min-h-screen bg-[#F5F7FC] pt-20">
       <div className="grid lg:grid-cols-2 min-h-screen">
         {/* LEFT SIDE */}
         <div className="relative px-10 py-8 flex flex-col">
@@ -17,14 +17,14 @@ export default function SignUp() {
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-blue-600 rounded-md"></div>
             <h2 className="text-blue-600 font-bold text-2xl">
-              Recovery Path
+              AddHelp
             </h2>
           </div>
 
           <div className="flex-1 flex items-center">
             <div className="relative w-full">
               {/* Phone Mockup */}
-              <div className="relative w-[290px] h-[580px] mx-auto">
+              <div className="relative w-[290px] h-[500px] mx-auto">
                 <div className="absolute inset-0 rounded-[45px] bg-[#AEB5C1] shadow-2xl"></div>
 
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 w-40 h-6 bg-[#9198A3] rounded-full"></div>
@@ -94,11 +94,11 @@ export default function SignUp() {
         {/* RIGHT SIDE */}
         <div className="flex items-center justify-center px-8">
           <div className="w-full max-w-[500px]">
-            <h1 className="text-5xl font-bold text-slate-900">
+            <h1 className="text-3xl font-bold text-slate-900">
               Create your account
             </h1>
 
-            <p className="mt-3 text-slate-500">
+            <p className="mt-2 text-slate-500">
               Already have an account?{" "}
               <span className="text-blue-600 cursor-pointer">
                 Login here
@@ -106,7 +106,7 @@ export default function SignUp() {
             </p>
 
             {/* Progress */}
-            <div className="mt-12 flex gap-4">
+            <div className="mt-10 flex gap-4">
               <div className="h-1.5 flex-1 bg-blue-600 rounded-full"></div>
               <div className="h-1.5 flex-1 bg-slate-300 rounded-full"></div>
             </div>
@@ -128,7 +128,7 @@ export default function SignUp() {
                   <input
                     type="text"
                     placeholder="John Doe"
-                    className="w-full h-14 pl-12 pr-4 border border-slate-300 rounded-xl bg-white outline-none focus:border-blue-500"
+                    className="w-full h-10 pl-12 pr-4 border border-slate-300 rounded-xl bg-white outline-none focus:border-blue-500"
                   />
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function SignUp() {
                   <input
                     type="email"
                     placeholder="john@example.com"
-                    className="w-full h-14 pl-12 pr-4 border border-slate-300 rounded-xl bg-white outline-none focus:border-blue-500"
+                    className="w-full h-10 pl-12 pr-4 border border-slate-300 rounded-xl bg-white outline-none focus:border-blue-500"
                   />
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function SignUp() {
                   <input
                     type="tel"
                     placeholder="+1 (555) 000-0000"
-                    className="w-full h-14 pl-12 pr-4 border border-slate-300 rounded-xl bg-white outline-none focus:border-blue-500"
+                    className="w-full h-10 pl-12 pr-4 border border-slate-300 rounded-xl bg-white outline-none focus:border-blue-500"
                   />
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function SignUp() {
               {/* Button */}
               <button
                 type="submit"
-                className="w-full h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-xl flex items-center justify-center gap-2 font-medium transition"
+                className="w-full h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-xl flex items-center justify-center gap-2 font-medium transition"
               >
                 Continue
                 <ArrowRight size={18} />

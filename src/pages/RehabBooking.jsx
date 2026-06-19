@@ -65,7 +65,7 @@ function RehabBooking() {
 
   
   return (
-    <div className="min-h-screen bg-[#f5f7fc] flex pt-18">
+    <div className="min-h-screen bg-[#f5f7fc] flex pt-20">
       {/* Sidebar */}
       <aside className="w-[280px] bg-white border-r border-slate-200 p-5">
         <div className="flex justify-between items-center">
