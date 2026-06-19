@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           <Link
             to="/login"
-            className="hidden md:block text-gray-600 text-blue-600 transition-colors"
+            className="hidden md:block text-gray-600 text-blue-600 transition-colors hover:text-blue-600 hover:font-semibold"
           >
             Login
           </Link>
