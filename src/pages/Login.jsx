@@ -34,22 +34,22 @@ function Login() {
             Log in to your AddHelp dashboard
           </p>
 
-          <div className="flex w-full mt-5 mb-3 gap-4">
-            <div>
-              <button className="border w-full border-[#C3C6D7] text-sm px-10 py-2 rounded-lg flex  items-center gap-2 cursor-pointer hover:bg-[#DBE1FF] transition duration-300 ease-in-out">
+          <div className="flex  mt-5 mb-3 gap-4">
+            
+              <button className="border bg-white flex-1 border-[#C3C6D7] text-sm px-10 py-2 rounded-lg flex  items-center gap-2 cursor-pointer hover:bg-[#DBE1FF] transition duration-300 ease-in-out">
                 <span>
                   {" "}
                   <FcGoogle size={23} />
                 </span>
                 Google
               </button>
-            </div>
-            <div className="w-full">
-              <button className="border w-full cursor-pointer border-[#C3C6D7] text-sm px-10 py-2 rounded-lg flex items-center gap-2 hover:bg-[#DBE1FF] transition duration-300 ease-in-out">
+            
+            
+              <button className="border bg-white  flex-1 cursor-pointer border-[#C3C6D7] text-sm px-10 py-2 rounded-lg flex items-center gap-2 hover:bg-[#DBE1FF] transition duration-300 ease-in-out">
                 <SiApple size={23} />
                 Apple
               </button>
-            </div>
+            
           </div>
           <div className="flex items-center mb-3 gap-4">
             <hr className=" flex-1 border-[#ccc]" />
@@ -60,7 +60,7 @@ function Login() {
           </div>
           <div>
             <form action="" onSubmit={handleSubmit}>
-              <label htmlFor="email" className="font-[500] text-sm">
+              <label htmlFor="email" className=" text-sm">
                 Email Address
               </label>{" "}
               <br />
@@ -71,13 +71,13 @@ function Login() {
                 type="email"
                 required
                 placeholder="name@company.com"
-                className="border text-sm border-[#C3C6D7] w-full px-4 py-2 rounded-lg outline-[#2f4f4f]"
+                className="border text-sm border-[#C3C6D7] bg-white w-full px-4 py-2 rounded-lg outline-[#2f4f4f]"
               />{" "}
               <br />
               <br />
               <div className="flex items-center justify-between">
                 <div>
-                  <label htmlFor="password" className="font-[500] text-sm">
+                  <label htmlFor="password" className=" text-sm">
                     Password
                   </label>
                 </div>
@@ -94,7 +94,7 @@ function Login() {
                   value={password}
                   required
                   type={showPassword ? "text" : "password"}
-                  className="border border-[#C3C6D7] w-full px-4 py-2 rounded-lg text-sm outline-[#2f4f4f] "
+                  className="border bg-white border-[#C3C6D7] w-full px-4 py-2 rounded-lg text-sm outline-[#2f4f4f] "
                 />
                 <button
                   className="absolute   right-3 top-1/2 -translate-y-1/2"

@@ -14,12 +14,7 @@ export default function SignUp() {
         {/* LEFT SIDE */}
         <div className="relative px-10 py-8 flex flex-col">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-blue-600 rounded-md"></div>
-            <h2 className="text-blue-600 font-bold text-2xl">
-              AddHelp
-            </h2>
-          </div>
+          
 
           <div className="flex-1 flex items-center">
             <div className="relative w-full">
